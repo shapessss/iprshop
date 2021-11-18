@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #2a2a2a;
+    background-image: url(background.svg);
+    max-width: 1125px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+  }
+  
+  nav.main__navigation {
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding: 20px 40px 20px 40px;
+    z-index: 9999;
+  }
+  
+  nav a {
+    color: #2a2a2a;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+  
+  nav a:hover {
+    color: #5000ff;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .main__logo {
+    background-image: url(../static/main-logo.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+  }
+  
+  section {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 40px;
+  }
+
+  section.contact {
+      color: #ffffff;
+      font-size: 14px;
+  }
+
+  .noti__ticker {
+      background-color: #5000ff;
+      box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+      padding: 10px 20px;
+      border-radius: 3px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  .image {
+    padding: 0;
+  }
+  
+  blockquote {
+    font-size: 32px;
+    line-height: 1.2;
+    font-style: italic;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  
+  .map {
+    width: 100%;
+  }
+  
+  .contact p {
+    margin-top: 20px;
+  }
+  
+  .contact a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid #f05d5d;
+    padding-bottom: 1px;
+  }
+
+  footer {
+    position: relative;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0);
+      color: #2a2a2a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 68px;
+  }
+  
+  @media (max-width: 740px) {
+    section, header {
+      padding: 20px;
+    }
+  
+    h2, blockquote {
+      font-size: 24px;
+    }
+  
+    body {
+      font-size: 16px;
+      padding-top: 0;
+    }
+    
+    nav a {
+      display: block;
+      border: none;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    body {
+      font-size: 22px;
+      
+    }
+  }
+  
